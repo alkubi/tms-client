@@ -1,0 +1,36 @@
+{
+    "name": "tms-client",
+    "version": "0.0.1-alpha",
+    "description": "TMS Client side",
+    "homepage": "https://github.com/alkubi/tms-client",
+    "contributors": [
+        {
+            "name": "Alec ROY",
+            "web": "https://github.com/aroybase"
+        },
+        {
+            "name": "Gabriel MALET",
+            "web": "https://github.com/UbikZ"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alkubi/tms-client.git"
+    },
+    "bugs": {
+        "url": "https://github.com/alkubi/tms-client/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/angular-ui/ui-router/blob/master/LICENSE"
+        }
+    ],
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-contrib-cssmin": "~0.10.0",
+        "grunt-contrib-uglify": "~0.5.1",
+        "grunt-ng-annotate": "~0.3.2",
+        "grunt-ngmin": "~0.0.3"
+    }
+}
