@@ -1,7 +1,7 @@
 app.directive('ngHeader', function () {
     return{
         restrict: 'E',
-        templateUrl: '_directives/Header.html',
+        templateUrl: 'views/_directives/Header.html',
         scope: {
             user: '=',
             notifications: '='
