@@ -1,0 +1,98 @@
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
+/**
+* Authors :     Alexandre ROY & Gabriel MALET
+* Date :        08/2014
+* Licence :     MIT
+* Description : Main stylesheet of Elkubi TMS
+*/
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
+/**
+* BLOCKQUOTE
+*/
+blockquote {
+    border-left: 5px solid #40826D;
+    background-color: #fff;
+}
+
+/**********************************************************************************************************************/
+/**
+* ALERTS
+*/
+.alert-danger a, .alert-danger a:hover, .alert-danger a:visited, .alert-danger a:active {
+    color: #A94442;
+}
+.alert-success a, .alert-success a:hover, .alert-success a:visited, .alert-success a:active {
+    color: #3C763D;
+}
+.alert-info a, .alert-info a:hover, .alert-info a:visited, .alert-info a:active {
+    color: #31708F;
+}
+.alert-warning a, .alert-warning a:hover, .alert-warning a:visited, .alert-warning a:active {
+    color: #8A6D3B;
+}
+
+/**********************************************************************************************************************/
+/**
+* BADGES
+*/
+.badge {
+    font-weight: inherit;
+}
+
+.badge-default {
+    background-color: #777;
+}
+
+.badge-default[href]:hover,
+.badge-default[href]:focus {
+    background-color: #5e5e5e;
+}
+
+.badge-primary {
+    background-color: #428bca;
+}
+
+.badge-primary[href]:hover,
+.badge-primary[href]:focus {
+    background-color: #3071a9;
+}
+
+.badge-success {
+    background-color: #5cb85c;
+}
+
+.badge-success[href]:hover,
+.badge-success[href]:focus {
+    background-color: #449d44;
+}
+
+.badge-info {
+    background-color: #5bc0de;
+}
+
+.badge-info[href]:hover,
+.badge-info[href]:focus {
+    background-color: #31b0d5;
+}
+
+.badge-warning {
+    background-color: #f0ad4e;
+}
+
+.badge-warning[href]:hover,
+.badge-warning[href]:focus {
+    background-color: #ec971f;
+}
+
+.badge-danger {
+    background-color: #d9534f;
+}
+
+.badge-danger[href]:hover,
+.badge-danger[href]:focus {
+    background-color: #c9302c;
+}
+
+/**********************************************************************************************************************/

@@ -4,7 +4,7 @@ app.directive('ngHeader', function () {
         templateUrl: 'views/_directives/Header.html',
         scope: {
             user: '=',
-            notifications: '='
+            alerts: '='
         }
     }
 });

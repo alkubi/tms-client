@@ -1,0 +1,185 @@
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
+/**
+* Authors :     Alexandre ROY & Gabriel MALET
+* Date :        08/2014
+* Licence :     MIT
+* Description : Main stylesheet of Elkubi TMS
+*/
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
+/**
+* COLORS
+Green #1 : #40826D (main)
+Green #2 : #99DACA (lighter)
+Green #3 : #0F9D58 (darker)
+*/
+/**********************************************************************************************************************/
+/**
+* GENERAL
+*/
+body {
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    background-color: #E9EAED;
+    font-size: 14px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/**********************************************************************************************************************/
+/**
+* TITLES
+*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+    color: #0F9D58;
+    margin-top: 0;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    display: block;
+    font-size: .5em;
+    margin-top: .3em;
+}
+
+h1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/**********************************************************************************************************************/
+/**
+* LINKS
+*/
+a, a:hover, a:active, a:focus, a:visited {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+/**********************************************************************************************************************/
+/**
+* HEADER
+*/
+header#header {
+    height: 45px;
+    max-height: 45px;
+    min-height: 45px;
+    background-color: #40826D;
+    color: #fff;
+}
+
+header#header p {
+    display: inline-block;
+    line-height: 45px;
+}
+
+/***********************************************************/
+
+header#header a.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 2.4em;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header#header a.logo:hover {
+    text-shadow: 3px 3px 3px #095228;
+}
+
+/***********************************************************/
+
+header#header p#header-search {
+    line-height: inherit;
+    margin-top: 10px;
+    position: relative;
+}
+
+header#header p#header-search input {
+    width: 100%;
+    border: none;
+    padding: 3px 5px;
+    color: #386F48;
+    border-radius: 3px;
+}
+
+header#header p#header-search button {
+    background: none;
+    border: none;
+    color: #ddd;
+    font-size: 1.3em;
+    position: absolute;
+    top: -1px;
+    right: 14px;
+}
+
+header#header p#header-search button:hover {
+    color: #aaa;
+}
+
+/***********************************************************/
+
+header#header p#header-alerts {
+    margin-top: 2px;
+}
+
+header#header p#header-alerts a.notifications {
+    position: relative;
+    height: 45px;
+}
+
+header#header p#header-alerts a.notifications i {
+    font-size: 1.5em;
+}
+
+header#header p#header-alerts a.notifications span.badge.badge-danger {
+    position: absolute;
+    top: -4px;
+    left:14px;
+    font-size: .7em;
+    padding: 3px;
+}
+
+/**********************************************************************************************************************/
+/**
+* CONTENT WRAPPER
+*/
+#content-wrapper {
+    margin-top: 65px;
+}
+
+/**********************************************************************************************************************/
+/**
+* SIDEBAR
+*/
+aside#sidebar {
+    background-color: #f8f8f8;
+    border-left: 5px solid #40826D;
+    margin-bottom: 20px;
+}
+
+aside#sidebar ul li a {
+    padding: 10px;
+    color: #555;
+    display: block;
+}
+
+aside#sidebar ul li:hover a {
+    background-color: #bbb;
+    cursor: pointer;
+    color: #fff;
+}
+
+aside#sidebar ul li.active a {
+    color: #fff;
+    background-color: #40826D;
+    cursor: default;
+}
+
+/**********************************************************************************************************************/

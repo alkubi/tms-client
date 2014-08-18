@@ -2,27 +2,31 @@
 <html>
 
     <head>
-        <title>Translation Management System</title>
+        <title>Alkubi - Translation Management System</title>
         <!-- Metatags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Externals -->
+            <!-- SELF-HOSTED -->
         <link href="public/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="public/components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+            <!-- NOT-HOSTED -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
         <!-- Sources -->
             <!-- THEME -->
-        <link href="public/css/theme/style.css" rel="stylesheet">
+        <link href="public/css/theme/bootstrap-theme.css" rel="stylesheet">
+        <link href="public/css/theme/main.css" rel="stylesheet">
     </head>
 
     <body ng-app="tmsApp">
-        <div id="wrapper">
-            <ng-sidebar></ng-sidebar>
-            <div id="page-wrapper" class="gray-bg">
-                <div class="row border-bottom">
-                    <ng-header></ng-header>
-                    <div ng-view></div>
-                </div>
+        <ng-header alerts=""></ng-header>
+
+        <div id="content-wrapper" class="col-lg-10 col-lg-offset-1 col-md-12">
+            <div class="col-lg-3 col-md-3">
+                <ng-sidebar></ng-sidebar>
             </div>
+            <div class="col-lg-9 col-md-9" id="view-wrapper" ng-view></div>
         </div>
         <!-- Externals -->
         <script src="public/components/angular/angular.js"></script>
@@ -37,6 +41,7 @@
             <!-- DIRECTIVES -->
         <script src="public/js/application/directives/HeaderDirective.js"></script>
         <script src="public/js/application/directives/SidebarDirective.js"></script>
+        <script src="public/js/application/directives/SidebarElementDirective.js"></script>
     </body>
 
 </html>
