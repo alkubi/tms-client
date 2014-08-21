@@ -1,4 +1,4 @@
-app.directive('ngSidebarElement', function ($location) {
+app.directive('ngSidebarElement', ['$location', function ($location) {
     return{
         restrict: 'E',
         templateUrl: 'views/_directives/SidebarElement.html',
@@ -9,8 +9,8 @@ app.directive('ngSidebarElement', function ($location) {
         },
         link: function (scope, element, attrs) {
             scope.isActive = function (route) {
-                return route === $location.path();
+                return $location.path().indexOf(route) == 0;
             }
         }
     }
-});
+}]);

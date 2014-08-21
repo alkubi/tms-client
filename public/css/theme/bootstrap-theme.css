@@ -4,7 +4,7 @@
 * Authors :     Alexandre ROY & Gabriel MALET
 * Date :        08/2014
 * Licence :     MIT
-* Description : Main stylesheet of Elkubi TMS
+* Description : Main stylesheet of Alkub.io TMS
 */
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
@@ -25,6 +25,11 @@ blockquote {
 }
 .alert-success a, .alert-success a:hover, .alert-success a:visited, .alert-success a:active {
     color: #3C763D;
+}
+.alert-success, .alert-success, .alert-success, .alert-success {
+    color: #40826D;
+    background-color: #ADDBCB;
+    border-color: #93BFB0;
 }
 .alert-info a, .alert-info a:hover, .alert-info a:visited, .alert-info a:active {
     color: #31708F;

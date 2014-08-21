@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>Alkubi - Translation Management System</title>
+        <title>Alkub.io - Translation Management System</title>
         <!-- Metatags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,10 +23,12 @@
         <ng-header alerts=""></ng-header>
 
         <div id="content-wrapper" class="col-lg-10 col-lg-offset-1 col-md-12">
-            <div class="col-lg-3 col-md-3">
-                <ng-sidebar></ng-sidebar>
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <ng-sidebar></ng-sidebar>
+                </div>
+                <div class="col-lg-9 col-md-9" id="view-wrapper" ng-view></div>
             </div>
-            <div class="col-lg-9 col-md-9" id="view-wrapper" ng-view></div>
         </div>
         <!-- Externals -->
         <script src="public/components/angular/angular.js"></script>
@@ -38,10 +40,23 @@
         <script src="public/js/application/modules/MainModule.js"></script>
             <!-- CTRL -->
         <script src="public/js/application/controllers/IndexController.js"></script>
+        <script src="public/js/application/controllers/KeysController.js"></script>
+            <!-- SERVICES -->
+        <script src="public/js/application/services/ApiService.js"></script>
+        <script src="public/js/application/services/AppsService.js"></script>
             <!-- DIRECTIVES -->
         <script src="public/js/application/directives/HeaderDirective.js"></script>
         <script src="public/js/application/directives/SidebarDirective.js"></script>
         <script src="public/js/application/directives/SidebarElementDirective.js"></script>
+        <!---->
+        <script src="public/js/application/directives/IconDirective.js"></script>
+        <script src="public/js/application/directives/TitleDirective.js"></script>
+        <script src="public/js/application/directives/ErrorListDirective.js"></script>
+        <script src="public/js/application/directives/LoadingDirective.js"></script>
+        <!---->
+        <script src="public/js/application/directives/AppSelectionDirective.js"></script>
+        <script src="public/js/application/directives/AppSelectionElementDirective.js"></script>
+        <!---->
     </body>
 
 </html>

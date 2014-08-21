@@ -1,0 +1,8 @@
+<p class="alert-info alert">
+    <label for="app_id">Please, select an app to manage its translation keys</label>
+    <select id="app_id"
+            ng-app-selection-element
+            ng-options="app.index as app.name for app in apps"
+            ng-model="selectedApp"
+            ng-change="goToAppKeys()"></select>
+</p>

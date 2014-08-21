@@ -1,13 +1,15 @@
-app.controller('IndexController', ['$scope', function ($scope) {
-    $scope.currentUser = {
-        "fname": 'Alec',
-        "lname": 'ROY'
-    };
+app.controller('IndexController',
+    ['$rootScope', '$scope',
+        function ($rootScope, $scope) {
+            $rootScope.currentUser = {
+                "fname": 'Alec',
+                "lname": 'ROY'
+            };
 
-    $scope.alerts = {
-        "notifications": [
-            "Tout va bien",
-            "Tout va mal"
-        ]
-    }
-}]);
+            $rootScope.alerts = {
+                "notifications": [
+                    "Tout va bien",
+                    "Tout va mal"
+                ]
+            }
+        }]);

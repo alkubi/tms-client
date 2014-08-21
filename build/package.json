@@ -1,7 +1,7 @@
 {
-    "name": "tms-client",
+    "name": "Alkub.io TMS",
     "version": "0.0.1-alpha",
-    "description": "TMS Client side",
+    "description": "Alkub.io TMS Client side",
     "homepage": "https://github.com/alkubi/tms-client",
     "contributors": [
         {

@@ -1,31 +1,33 @@
-<h1>
-    Ahoy {{currentUser.fname}} !
-    <small>Feel free to check your fresh feeds</small>
-</h1>
+<ng-title main="Ahoy {{currentUser.fname}} !" small="Feel free to check your fresh feeds"></ng-title>
 
-<p class="alert alert-danger alert-dismissable">
-    You have <strong>{{alerts.notifications.length}}</strong> new notifications !
+<p class="alert alert-danger alert-dismissable" ng-show="alerts.notifications.length > 0">
+    You have
+    <ng-pluralize count="alerts.notifications.length" when="{
+    1:'{{alerts.notifications.length}} new notification',
+    other:'{{alerts.notifications.length}} new notifications'
+    }">
+    </ng-pluralize>
     <button type="button" class="close" data-dismiss="alert">
-        <i class="fa fa-times"></i>
+        <icon src="fa-times"></icon>
     </button>
 </p>
 
 <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-sm-4">
         <p class="alert alert-info ">
-            <i class="fa fa-fw fa-child fa-5x"></i>
+            <icon src="fa-child fa-5x"></icon>
             <span>No pending work</span>
         </p>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-sm-4">
         <p class="alert alert-warning">
-            <i class="fa fa-fw fa-warning fa-5x"></i>
+            <icon src="fa-warning fa-5x"></icon>
             <a href="#"><strong>6</strong> wrong translations notified</a>
         </p>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-sm-4">
         <p class="alert alert-success">
-            <i class="fa fa-fw fa-bar-chart-o fa-5x"></i>
+            <icon src="fa-bar-chart-o fa-5x"></icon>
             <span>Completed translations : <strong>98%</strong></span>
         </p>
     </div>

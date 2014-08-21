@@ -4,15 +4,16 @@
 * Authors :     Alexandre ROY & Gabriel MALET
 * Date :        08/2014
 * Licence :     MIT
-* Description : Main stylesheet of Elkubi TMS
+* Description : Main stylesheet of Alkub.io TMS
 */
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
 /**
 * COLORS
 Green #1 : #40826D (main)
-Green #2 : #99DACA (lighter)
-Green #3 : #0F9D58 (darker)
+Green #2 : #99DACA
+Green #3 : #386F48
+Green #4 : #4EA085
 */
 /**********************************************************************************************************************/
 /**
@@ -26,10 +27,18 @@ body {
     text-align: justify;
 }
 
-ul {
+ul:not(.error-list) {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+label {
+    font-weight: 400;
+}
+
+select {
+    width: 100%;
 }
 
 /**********************************************************************************************************************/
@@ -38,7 +47,7 @@ ul {
 */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
-    color: #0F9D58;
+    color: #4EA085;
     margin-top: 0;
 }
 
@@ -58,7 +67,6 @@ h1 {
 * LINKS
 */
 a, a:hover, a:active, a:focus, a:visited {
-    color: #fff;
     text-decoration: none;
     outline: none;
 }
@@ -81,6 +89,10 @@ header#header p {
 }
 
 /***********************************************************/
+
+header#header a {
+    color: #fff;
+}
 
 header#header a.logo {
     font-family: 'Lobster', cursive;
@@ -141,7 +153,7 @@ header#header p#header-alerts a.notifications i {
 header#header p#header-alerts a.notifications span.badge.badge-danger {
     position: absolute;
     top: -4px;
-    left:14px;
+    left: 14px;
     font-size: .7em;
     padding: 3px;
 }
@@ -183,3 +195,18 @@ aside#sidebar ul li.active a {
 }
 
 /**********************************************************************************************************************/
+
+/**********************************************************************************************************************/
+/**
+* CONTENT WRAPPER
+*/
+.block {
+    background-color: #fff;
+    border: 1px solid #d0d1d5;
+}
+
+.block .block-content {
+    background-color: #F6F7F8;
+    border-top: 1px solid #d0d1d5;
+    padding: 10px;
+}
